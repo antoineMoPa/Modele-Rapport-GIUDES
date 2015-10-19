@@ -1,0 +1,16 @@
+# .gitgnore
+# Tommy Savaria
+# Pour Modèle de Rapport Gi - UdeS
+
+# Ignore Everything
+*
+
+# Except...
+!.gitignore
+!*.tex
+!*.bib
+!*.bst
+!Images/*
+
+# ...even if they are in subdirectories
+!*/
