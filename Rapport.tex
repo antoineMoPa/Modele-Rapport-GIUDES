@@ -23,9 +23,11 @@
 \usepackage{hyperref}
 \usepackage{tabularx} % in the preamble
 \usepackage{titlesec, blindtext, color}
+
 \usepackage{geometry}
 \geometry{top=3cm}
 \geometry{bottom=3cm}
+\usepackage{caption}
 
 % Police sans-serif
 \renewcommand{\familydefault}{\sfdefault}
@@ -44,6 +46,11 @@
 \definecolor{gray75}{gray}{0.75}
 \newcommand{\hsp}{\hspace{20pt}}
 \titleformat{\chapter}[hang]{\Large\bfseries}{\thechapter\hsp\textcolor{gray75}{|}\hsp}{0pt}{\Large\bfseries}
+
+% Tableaux
+
+\addto\captionsfrench{\def\tablename{\bf{Tableau }}}
+\captionsetup{labelsep=colon}
 
 \begin{document}
 \begin{titlepage}
@@ -78,6 +85,7 @@
 \pagenumbering{roman}
 \setcounter{page}{1}
 
+\renewcommand{\contentsname}{Sommaire}
 \tableofcontents
 \setlength{\parskip}{1em}
 
@@ -87,8 +95,26 @@
 \setcounter{page}{1}
 
 % Chapitre 1
-\chapter{Chapitre}
+\section{Les rhinocéros}
 Nous savons que les LED causent des maux de tête aux chercheurs \cite{FuturaDEL2}
+
+\section{Exemple de tableau}
+
+\begin{table}
+  \begin{center}
+    \caption{vitesse, $\lambda$ et résultats}
+    \begin{tabular}{ccc}
+      \hline
+      \bf vitesse (m) & \bf $\lambda (t)$ & \bf résultat ($\Omega$) \\
+      \hline
+      \hline
+      1 & 2 & 3.8 \\
+      5 & 2 & 3 \\
+      \hline
+    \end{tabular}
+  \end{center}
+\end{table}
+
 
 % Bibliographie
 \bibliographystyle{IEEEtran-fr}
