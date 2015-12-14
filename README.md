@@ -1,24 +1,29 @@
-# Modele-Rapport-Giudes
+# Modèle rapport Gi - UdeS
+Copyright 2015 Tommy Savaria
 
-## En vedette
+## Description ##
+Ce modèle vous permet de vous lancer rapidement dans la production de vos rapports d'APP en générant un document respectant les normes de présentation exigées par la compétence *GEN111 Communication écrite*.
 
-* Table des matières
-* Numérotation des pages en i,ii,iii puis en 1,2,3 aux sections appropriées.
-* Makefile: lancez `make` pour la génération du pdf
+## Wiki ##
+Le Wiki contient des ressources, des informations utiles et des bouts de codes pour vous aider à rédiger vos rapports. Allez y faire un tour.
 
-## Droits de reproduction
+## Licence ##
+This work may be distributed and/or modified under the
+conditions of the LaTeX Project Public License, either version 1.3
+of this license or (at your option) any later version.
+The latest version of this license is in
+http://www.latex-project.org/lppl.txt
+and version 1.3 or later is part of all distributions of LaTeX
+version 2005/12/01 or later.
 
-Je pense que l'intention initiale était de laisser les documents dans le domaine publique
-pour le bénéfice de tous. Aucun copyright n'est clâmé en je n'en clâmerais pas plus.
+This work has the LPPL maintenance status `maintained'.
 
-Bref utilisez autant que vous voulez.
+The Current Maintainer of this work is Tommy Savaria
 
-## Remerciements:
+## Remerciements ##
+Merci à tous ceux qui ont contribué à l'élaboration de ce modèle de rapport
 
-Merci [@NewLunarFire](https://github.com/NewLunarFire) de qui j'ai forké le code (hébergé [ici](https://bitbucket.org/TommySavaria/modele-rapport-giudes))
-
-Merci également à ces personnes dans le code source :
-
-    Jean-Pascal McGee
-    Pascal Vaillancourt
-    Alexander Selivanov
+* Tommy Savaria
+* Jean-Pascal McGee
+* Pascal Vaillancourt
+* Alexander Selivanov
