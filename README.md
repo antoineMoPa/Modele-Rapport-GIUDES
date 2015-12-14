@@ -4,6 +4,9 @@ Copyright 2015 Tommy Savaria
 ## Description ##
 Ce modèle vous permet de vous lancer rapidement dans la production de vos rapports d'APP en générant un document respectant les normes de présentation exigées par la compétence *GEN111 Communication écrite*.
 
+## Wiki ##
+Le Wiki contient des ressources, des informations utiles et des bouts de codes pour vous aider à rédiger vos rapports. Allez y faire un tour.
+
 ## Licence ##
 This work may be distributed and/or modified under the
 conditions of the LaTeX Project Public License, either version 1.3
