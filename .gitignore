@@ -13,8 +13,5 @@
 !*.bst
 !Makefile
 
-# But we can't keep this file in a public domain project
-IEEEabrv.bib
-
 # ...even if they are in subdirectories
 !*/
