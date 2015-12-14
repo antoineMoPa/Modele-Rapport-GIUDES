@@ -11,7 +11,7 @@
 %% https://gitlab.com/TommySavaria/Modele-Rapport-GIUDES %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\documentclass[letter,11pt]{report}
+\documentclass[letterpaper,11pt]{report}
 \usepackage[utf8]{inputenc}
 \usepackage[francais]{babel}
 \usepackage[T1]{fontenc}
@@ -23,14 +23,20 @@
 \usepackage{hyperref}
 \usepackage{tabularx} % in the preamble
 \usepackage{titlesec, blindtext, color}
+\usepackage{geometry}
+\geometry{top=3cm}
+\geometry{bottom=3cm}
+
+% Police sans-serif
+\renewcommand{\familydefault}{\sfdefault}
 
 % Style de la table des matières cliquable
 \hypersetup{
-    colorlinks,
-    citecolor=black,
-    filecolor=black,
-    linkcolor=black,
-    urlcolor=black
+  colorlinks,
+  citecolor=black,
+  filecolor=black,
+  linkcolor=black,
+  urlcolor=black
 }
 
 % Style des chapitres
@@ -42,34 +48,50 @@
 \begin{document}
 \begin{titlepage}
 % Page titre
-	\setlength{\parskip}{0em}
-	\centering \includegraphics[width=0.75\textwidth]{UdeS-logo.png}\par\vspace{1cm}
-	\vspace{0.5cm}
-	
-	\vspace{2cm}
-	{\scshape\LARGE\centering Titre du travail \par}
-	{\scshape\large\centering Rapport(en équipe) \par}
-	\vspace{2cm}
-	{\centering\scshape présenté à \par}
-	\vspace{2cm}
-	{\centering par: \par}
-	{\itshape\centering Nom - CIP \par}	
-	\vspace{3cm}
-	{\centering Département de Génie électrique et de génie informatique\par}
-    {\centering Faculté de génie}
-	\vfill
-	{\centering Session}
+  \setlength{\parskip}{0em}
+  
+  \centering \par
+  \uppercase{Université de Sherbrooke}\par
+  Faculté de génie\par
+  Département de génie électrique et génie informatique
+  
+  \vspace{3cm}
+  {\scshape\LARGE\centering Titre du travail \par}
+  \vspace{3cm}
+  Nom du cours\par
+  GENXXX
+  \vspace{3cm}
+
+  {\centering Présenté à \par}
+  Équipe professorale de la session SX
+  \vspace{4cm}
+  
+  {\centering Présenté par \par}
+  {\centering Nom -- CIP \par}
+  
+
+  \vfill
+  {\centering Sherbrooke -- 13 décembre 2015}
 
 \end{titlepage}
+
+\pagenumbering{roman}
+\setcounter{page}{1}
 
 \tableofcontents
 \setlength{\parskip}{1em}
 
+\newpage
+
+\pagenumbering{arabic}
+\setcounter{page}{1}
+
 % Chapitre 1
 \chapter{Chapitre}
+Nous savons que les LED causent des maux de tête aux chercheurs \cite{FuturaDEL2}
 
 % Bibliographie
-\bibliographystyle{ieeetran-fr}
+\bibliographystyle{IEEEtran-fr}
 \bibliography{IEEEabrv,Bibliographie}
 
 \end{document}

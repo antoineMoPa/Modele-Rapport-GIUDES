@@ -1,5 +1,6 @@
-# .gitgnore
+# .gitignore
 # Tommy Savaria
+# Antoine Morin-Paulhus
 # Pour Modèle de Rapport Gi - UdeS
 
 # Ignore Everything
@@ -10,7 +11,10 @@
 !*.tex
 !*.bib
 !*.bst
-!Images/*
+!Makefile
+
+# But we can't keep this file in a public domain project
+IEEEabrv.bib
 
 # ...even if they are in subdirectories
 !*/
